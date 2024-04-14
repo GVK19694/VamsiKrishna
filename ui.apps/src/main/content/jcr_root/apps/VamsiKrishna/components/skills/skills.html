@@ -1,0 +1,28 @@
+<section>
+    <h3 style = "background: black; color: white">Technical Skills</h3>
+    <table>
+        <tr>
+            <th>Skill Name</th>
+            <th>Level</th>
+        </tr>
+        <sly data-sly-list.props="${resource.getChildren}">
+            <sly data-sly-test="${props.name == 'skillsList'}"
+                 data-sly-list.skillitem="${props.getChildren}">
+                <tr>
+                    <td>${skillitem.skill}</td>
+                    <td>${skillitem.level}</td>
+                </tr>
+            </sly>
+        </sly>
+    </table>
+</section>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: right
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>

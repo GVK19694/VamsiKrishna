@@ -1,0 +1,18 @@
+<section data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+    <h1 style="text-align:center; background: #d279a6; color: white">Skills Summary</h1>
+    <div data-sly-list.summaryMultifield="${resource.getChildren}">
+        <div data-sly-test="${summaryMultifield.name == 'skills'}">
+            <ul data-sly-list.summary="${summaryMultifield.getChildren}">
+                <li>${summary.skillName}
+                    <div data-sly-list.descriptionMultifield="${summary.getChildren}">
+                        <ul data-sly-test="${descriptionMultifield.name == 'description'}"
+                            data-sly-list.description="${descriptionMultifield.getChildren}">
+                            <li>${description.details}</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !'${resource.getChildren}'}"></sly>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Education Details"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="Vam-Guard.validation">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <education
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Click add button to add a new education details"
+                        fieldLabel="Education Details">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./educationList">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <instituteName
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Institute Name"
+                                            required="{Boolean}true"
+                                            name="./instituteName"/>
+                                        <degree
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Type of degree"
+                                            required="{Boolean}true"
+                                            name="./degree"/>
+                                        <specialization
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Specialization"
+                                            required="{Boolean}true"
+                                            name="./specialization"/>
+                                        <startDate
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Joining Year"
+                                            required="{Boolean}true"
+                                            fieldDescription="Enter YYYY"
+                                            validation="year.validation"
+                                            name="./startDate"/>
+                                        <endDate
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Passing Year"
+                                            required="{Boolean}true"
+                                            fieldDescription="Enter YYYY"
+                                            validation="year.validation"
+                                            name="./endDate"/>
+                                        <location
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Institute Location"
+                                            required="{Boolean}true"
+                                            name="./location"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </education>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

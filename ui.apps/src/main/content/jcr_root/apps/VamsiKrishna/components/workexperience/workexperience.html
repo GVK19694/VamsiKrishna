@@ -1,0 +1,14 @@
+<section data-sly-use.exp="com.vamsi.krishna.core.models.WorkExperienceListModel"
+         data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+    <h1 style="text-align:center; background: #d279a6; color: white">Work Experience</h1>
+    <div data-sly-list.multi="${exp.companyDetails}">
+        <h2>${multi.companyName}</h2>
+        <h3>${multi.designation}<span style="float:right">${multi.startDate} to ${multi.endDate}</span></h3>
+        <h3>Roles &amp; Responsibilities</h3>
+        <ul data-sly-list.descr="${multi.description}">
+            <li>${descr.details}</li>
+        </ul>
+        <hr>
+    </div>
+</section>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !exp.companyDetails}"></sly>

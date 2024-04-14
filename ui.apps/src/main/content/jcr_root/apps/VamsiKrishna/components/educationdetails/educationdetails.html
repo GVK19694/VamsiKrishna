@@ -1,0 +1,12 @@
+<section data-sly-use.edu="com.vamsi.krishna.core.models.EducationDetailsModel"
+         data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+    <h1 style="text-align:center; background: #d279a6; color: white">Education Details</h1>
+    <div data-sly-list.item="${edu.educationList}">
+        <h3>${item.degree}, ${item.specialization}<span style="float:right">${item.startDate} to ${item.endDate}</span></h3>
+        <ul>
+            <li>I have completed my ${item.degree} at <strong>${item.instituteName}</strong> at ${item.location} in the stream of <strong>${item.specialization}</strong></li>
+        </ul>
+        <hr>
+    </div>
+</section>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !edu.educationList}"></sly>

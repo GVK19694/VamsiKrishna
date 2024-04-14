@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/VamsiKrishna",
+        "create path (nt:unstructured) /content/dam/VamsiKrishna/jcr:content",
+        "set properties on /content/dam/VamsiKrishna/jcr:content\n  set cq:conf{String} to /conf/VamsiKrishna\n  set jcr:title{String} to \"Vamps\"\nend"
+    ]
+}

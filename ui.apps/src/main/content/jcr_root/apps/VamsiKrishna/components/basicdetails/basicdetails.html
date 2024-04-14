@@ -1,0 +1,8 @@
+<sly data-sly-use.details="com.vamsi.krishna.core.models.BasicDetailsModel"/>
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"></sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!details.name}"></sly>
+<div style="text-align:center">
+    <h1>${details.name}</h1>
+    <h2>${details.designation}</h2>
+    <h3 style = "background: #ff9999; color: white">${details.mobile} | ${details.email} | ${details.city}</h3>
+</div>

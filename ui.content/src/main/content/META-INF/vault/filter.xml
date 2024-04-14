@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/VamsiKrishna" mode="merge"/>
+    <filter root="/content/VamsiKrishna" mode="merge"/>
+    <filter root="/content/dam/VamsiKrishna" mode="merge">
+        <exclude pattern="/content/dam/VamsiKrishna(/.*)?"/>
+        <include pattern="/content/dam/VamsiKrishna/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/VamsiKrishna/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/VamsiKrishna" mode="merge"/>
+</workspaceFilter>
