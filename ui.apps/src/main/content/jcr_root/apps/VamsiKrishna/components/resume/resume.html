@@ -1,0 +1,79 @@
+<sly data-sly-use.details="com.vamsi.krishna.core.models.BasicDetailsModel"
+     data-sly-use.edu="com.vamsi.krishna.core.models.EducationDetailsModel"
+     data-sly-use.exp="com.vamsi.krishna.core.models.WorkExperienceListModel"/>
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"></sly>
+<sly data-sly-call="${template.placeholder @
+    isEmpty = (
+        !details.name || !properties.description ||
+        !edu.educationList || !exp.companyDetails
+    )}"></sly>
+<div style="text-align:center">
+    <h1>${details.name}</h1>
+    <h2>${details.designation}</h2>
+    <h3 style = "background: #ff9999; color: white">${details.mobile} | ${details.email} | ${details.city}</h3>
+</div>
+<section>
+    <h1 style="text-align:center; background: #d279a6; color: white">Professional Summary</h1>
+    <p style = "text-align: justify">${properties.description}</p>
+</section>
+<section>
+    <h1 style="text-align:center; background: #d279a6; color: white">Education Details</h1>
+    <div data-sly-list.item="${edu.educationList}">
+        <h3>${item.degree}, ${item.specialization}<span style="float:right">${item.startDate} to ${item.endDate}</span></h3>
+        <ul>
+            <li>I have completed my ${item.degree} at <strong>${item.instituteName}</strong> at ${item.location} in the stream of <strong>${item.specialization}</strong></li>
+        </ul>
+        <hr>
+    </div>
+</section>
+<section>
+    <table style="width:100%">
+        <tr>
+            <th style="width:30%"><h1 style="text-align:center; background: #d279a6; color: white">Technical Skills</h1></th>
+            <th style="width:70%"><h1 style="text-align:center; background: #d279a6; color: white">Skills Summary</h1></th>
+        </tr>
+        <tr>
+            <td style="width:30%">
+                <table style="width:100%">
+                    <sly data-sly-list.props="${resource.getChildren}">
+                        <sly data-sly-test="${props.name == 'skillsList'}"
+                             data-sly-list.skillitem="${props.getChildren}">
+                            <tr>
+                                <td style="width:60%">${skillitem.skill}</td>
+                                <td style="width:40%">${skillitem.level}</td>
+                            </tr>
+                        </sly>
+                    </sly>
+                </table>
+            </td>
+            <td style="width:70%">
+                <div data-sly-list.summaryMultifield="${resource.getChildren}">
+                    <div data-sly-test="${summaryMultifield.name == 'skills'}">
+                        <ul data-sly-list.summary="${summaryMultifield.getChildren}">
+                            <li>${summary.skillName}
+                                <div data-sly-list.descriptionMultifield="${summary.getChildren}">
+                                    <ul data-sly-test="${descriptionMultifield.name == 'description'}"
+                                        data-sly-list.description="${descriptionMultifield.getChildren}">
+                                        <li>${description.details}</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+<section>
+    <h1 style="text-align:center; background: #d279a6; color: white">Work Experience</h1>
+    <div data-sly-list.multi="${exp.companyDetails}">
+        <h2>${multi.companyName}</h2>
+        <h3>${multi.designation}<span style="float:right">${multi.startDate} to ${multi.endDate}</span></h3>
+        <h3>Roles &amp; Responsibilities</h3>
+        <ul data-sly-list.descr="${multi.description}">
+            <li>${descr.details}</li>
+        </ul>
+        <hr>
+    </div>
+</section>

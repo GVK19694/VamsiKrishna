@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Resume"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+	extraClientlibs="Vamps.validation">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+			<tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+				<items jcr:primaryType="nt:unstructured">
+					<basicdetails
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/coral/foundation/container"
+						jcr:title="Basic Details">
+						<items jcr:primaryType="nt:unstructured">
+							<name
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								fieldLabel="Enter Full Name"
+								required="{Boolean}true"
+								name="./name"/>
+							<designation
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								fieldLabel="Enter Current Designation"
+								required="{Boolean}true"
+								name="./designation"/>
+							<mobile
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								fieldLabel="Enter Mobile Number"
+								name="./mobile"
+								validation="mobile.validation"
+								required="{Boolean}true"/>
+							<email
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								fieldLabel="Enter Email ID"
+								name="./email"
+								validation="email.validation"
+								required="{Boolean}true"/>
+							<city
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								fieldLabel="Enter City Name"
+								name="./city"/>
+						</items>
+					</basicdetails>
+					<professionalsummary
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/coral/foundation/container"
+						jcr:title="Professional Summary">
+						<items jcr:primaryType="nt:unstructured">
+							<description
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+								fieldLabel="Description"
+								name="./description"/>
+						</items>
+					</professionalsummary>
+					<education
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+						jcr:title="Education Details"
+						composite="{Boolean}true"
+						fieldDescription="Click add button to add a new education details"
+						fieldLabel="Education Details">
+						<field
+							jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/coral/foundation/container"
+							name="./educationList">
+							<items jcr:primaryType="nt:unstructured">
+								<column
+									jcr:primaryType="nt:unstructured"
+									sling:resourceType="granite/ui/components/coral/foundation/container">
+									<items jcr:primaryType="nt:unstructured">
+										<instituteName
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Institute Name"
+											required="{Boolean}true"
+											name="./instituteName"/>
+										<degree
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Type of degree"
+											required="{Boolean}true"
+											name="./degree"/>
+										<specialization
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Specialization"
+											required="{Boolean}true"
+											name="./specialization"/>
+										<startDate
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Joining Year"
+											required="{Boolean}true"
+											fieldDescription="Enter YYYY"
+											validation="year.validation"
+											name="./startDate"/>
+										<endDate
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Passing Year"
+											required="{Boolean}true"
+											fieldDescription="Enter YYYY"
+											validation="year.validation"
+											name="./endDate"/>
+										<location
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Institute Location"
+											required="{Boolean}true"
+											name="./location"/>
+									</items>
+								</column>
+							</items>
+						</field>
+					</education>
+					<skills
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+						jcr:title="Technical Skills"
+						composite="{Boolean}true"
+						fieldDescription="Click add button to add a new skill"
+						fieldLabel="Skills List">
+						<field
+							jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/coral/foundation/container"
+							name="./skillsList">
+							<items jcr:primaryType="nt:unstructured">
+								<column
+									jcr:primaryType="nt:unstructured"
+									sling:resourceType="granite/ui/components/coral/foundation/container">
+									<items jcr:primaryType="nt:unstructured">
+										<skill
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Skill Name"
+											name="./skill"/>
+										<level
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+											fieldLabel="Level of Skills"
+											name="./level"
+											text="Level">
+											<items jcr:primaryType="nt:unstructured">
+												<beginner
+													jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+													text="Beginner"
+													value="Beginner"
+													name="./level"/>
+												<advance
+													jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+													text="Advance"
+													value="Advance"
+													name="./level"/>
+												<professional
+													jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+													text="Professional"
+													value="Professional"
+													name="./level"/>
+												<expert
+													jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+													text="Expert"
+													value="Expert"
+													name="./level"/>
+											</items>
+										</level>
+									</items>
+								</column>
+							</items>
+						</field>
+					</skills>
+					<experience
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+						jcr:title="Work Experience"
+						composite="{Boolean}true"
+						fieldDescription="Click add button to add a new experience"
+						fieldLabel="Experience Details">
+						<field
+							jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/coral/foundation/container"
+							name="./companyDetails">
+							<items jcr:primaryType="nt:unstructured">
+								<column
+									jcr:primaryType="nt:unstructured"
+									sling:resourceType="granite/ui/components/coral/foundation/container">
+									<items jcr:primaryType="nt:unstructured">
+										<companyName
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Company Name"
+											required="{Boolean}true"
+											name="./companyName"/>
+										<designation
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Deisgnation"
+											required="{Boolean}true"
+											name="./designation"/>
+										<startDate
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="Joined Date"
+											required="{Boolean}true"
+											fieldDescription="Enter YYYY-MM-DD"
+											validation="date.validation"
+											name="./startDate"/>
+										<endDate
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											fieldLabel="End Date"
+											required="{Boolean}true"
+											fieldDescription="Enter YYYY-MM-DD"
+											validation="date.validation"
+											name="./endDate"/>
+										<description
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+											fieldDescription="Click 'Add Field' to add a Responsibilities"
+											composite="{Boolean}true"
+											fieldLabel="Roles &amp; Responsibilities">
+											<field
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/container"
+												name="./description">
+												<items jcr:primaryType="nt:unstructured">
+													<details
+														jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														emptyText="Enter Responsibilities"
+														name="./details"/>
+												</items>
+											</field>
+										</description>
+									</items>
+								</column>
+							</items>
+						</field>
+					</experience>
+					<skillsSummaryTab
+						jcr:primaryType="nt:unstructured"
+						jcr:title="Skills Summary"
+						sling:resourceType="granite/ui/components/coral/foundation/container"
+						margin="{Boolean}true">
+						<items jcr:primaryType="nt:unstructured">
+							<skills
+								jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+								composite="{Boolean}true"
+								fieldLabel="Skills Summary">
+								<field
+									jcr:primaryType="nt:unstructured"
+									sling:resourceType="granite/ui/components/coral/foundation/container"
+									name="./skills">
+									<items jcr:primaryType="nt:unstructured">
+										<name
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+											emptyText="Skill Name"
+											name="./skillName"/>
+										<description
+											jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+											composite="{Boolean}true"
+											fieldLabel="Description">
+											<field
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/container"
+												name="./description">
+												<items jcr:primaryType="nt:unstructured">
+													<summary
+														jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														emptyText="Enter Summary"
+														name="./details"/>
+												</items>
+											</field>
+										</description>
+									</items>
+								</field>
+							</skills>
+						</items>
+					</skillsSummaryTab>
+				</items>
+			</tabs>
+        </items>
+    </content>
+</jcr:root>
