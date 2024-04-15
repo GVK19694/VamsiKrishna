@@ -1,0 +1,6 @@
+<section data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+    <article>
+        ${properties.text @ context='html'}
+    </article>
+</section>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !(properties.text)}"></sly>
