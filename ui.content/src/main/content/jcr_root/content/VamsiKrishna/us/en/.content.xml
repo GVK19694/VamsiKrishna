@@ -79,6 +79,5 @@
             </container>
         </root>
     </jcr:content>
-    <home-page/>
-    <bae-page/>
+    <base-page/>
 </jcr:root>
