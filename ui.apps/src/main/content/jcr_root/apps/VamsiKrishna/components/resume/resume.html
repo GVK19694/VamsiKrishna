@@ -33,7 +33,7 @@
             <th style="width:70%"><h1 style="text-align:center; background: #d279a6; color: white">Skills Summary</h1></th>
         </tr>
         <tr>
-            <td style="width:30%">
+            <td style="width:30%; vertical-align: top">
                 <table style="width:100%">
                     <sly data-sly-list.props="${resource.getChildren}">
                         <sly data-sly-test="${props.name == 'skillsList'}"
@@ -46,7 +46,7 @@
                     </sly>
                 </table>
             </td>
-            <td style="width:70%">
+            <td style="width:60%; vertical-align: top">
                 <div data-sly-list.summaryMultifield="${resource.getChildren}">
                     <div data-sly-test="${summaryMultifield.name == 'skills'}">
                         <ul data-sly-list.summary="${summaryMultifield.getChildren}">
