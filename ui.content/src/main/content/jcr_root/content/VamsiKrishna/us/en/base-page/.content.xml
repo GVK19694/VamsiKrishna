@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-04-16T23:03:55.606+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/VamsiKrishna/settings/wcm/templates/base-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Bae Page"
+        sling:resourceType="VamsiKrishna/components/page">
+        <root
+            jcr:lastModified="{Date}2024-04-16T22:54:55.251+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <resources
+                jcr:created="{Date}2024-04-16T22:55:58.812+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-04-16T22:55:58.812+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="VamsiKrishna/components/resources">
+                <basicdetails
+                    jcr:lastModified="{Date}2024-04-16T22:57:29.627+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="VamsiKrishna/components/basicdetails"
+                    city="Bengaluru"
+                    designation="Senior Software Developer"
+                    email="gvk19694@gmail.com"
+                    mobile="+919663489808"
+                    name="VAMSIKRISHNA G"/>
+                <tad
+                    jcr:lastModified="{Date}2024-04-16T22:57:51.609+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="VamsiKrishna/components/tad"
+                    description="My name is VAMSIKRISHNA. I am a seasoned Adobe Experience Manager specialist with over six years of comprehensive experience in leveraging AEM to development, implement, and optimize digital solutions that drive engagement, enhance customer experiences, and maximize business value. My journey with AEM began as a developer, where I immersed myself in the intricacies of the platform, mastering content management, digital asset management, and the application of AEM’s cloud capabilities to foster scalable, resilient digital ecosystems."/>
+                <educationdetails
+                    jcr:lastModified="{Date}2024-04-16T22:58:29.411+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="VamsiKrishna/components/educationdetails">
+                    <educationList jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            degree="B Tech"
+                            endDate="2018"
+                            instituteName="Kakinada Institute of Engineering &amp; Technology "
+                            location="Kakinada"
+                            specialization="E C E"
+                            startDate="2013"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            degree="10 + 2"
+                            endDate="2011"
+                            instituteName="Sri Chaitanya Junior College"
+                            location="Kakinada"
+                            specialization="M P C"
+                            startDate="2009"/>
+                    </educationList>
+                </educationdetails>
+                <skills
+                    jcr:lastModified="{Date}2024-04-16T23:00:46.777+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="VamsiKrishna/components/skills">
+                    <skillsList jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            level="Expert"
+                            skill="AEM"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="JAVA"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="HTML"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="CSS"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            level="Advance"
+                            skill="JavaScript"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            level="Advance"
+                            skill="Maven"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Components"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Templates"/>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Sightly (HTL)"/>
+                        <item9
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Client Libs"/>
+                        <item10
+                            jcr:primaryType="nt:unstructured"
+                            level="Expert"
+                            skill="Sling Models"/>
+                        <item11
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Sling Servlets"/>
+                        <item12
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="OSGi Services"/>
+                        <item13
+                            jcr:primaryType="nt:unstructured"
+                            level="Advance"
+                            skill="OSGi Config"/>
+                        <item14
+                            jcr:primaryType="nt:unstructured"
+                            level="Advance"
+                            skill="Workflows"/>
+                        <item15
+                            jcr:primaryType="nt:unstructured"
+                            level="Advance"
+                            skill="Handlers"/>
+                        <item16
+                            jcr:primaryType="nt:unstructured"
+                            level="Advance"
+                            skill="Schedulers"/>
+                        <item17
+                            jcr:primaryType="nt:unstructured"
+                            level="Advance"
+                            skill="Listeners"/>
+                        <item18
+                            jcr:primaryType="nt:unstructured"
+                            level="Beginner"
+                            skill="Query Builder"/>
+                        <item19
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Multi Sites"/>
+                        <item20
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Migration"/>
+                        <item21
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="Integration"/>
+                        <item22
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="GitHub"/>
+                        <item23
+                            jcr:primaryType="nt:unstructured"
+                            level="Professional"
+                            skill="JIRA"/>
+                    </skillsList>
+                </skills>
+                <summary
+                    jcr:lastModified="{Date}2024-04-16T23:01:57.352+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="VamsiKrishna/components/summary">
+                    <skills jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            skillName="AEM">
+                            <description jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Ability to manage digital assets, workflows, content structures, and authoring environments within AEM."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Experience in developing and customizing AEM components using technologies such as HTL, Sightly, and JSP."/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Knowledge of integrating AEM with React JS for seamless development of dynamic and Interactive web applications."/>
+                            </description>
+                        </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            skillName="Fullstack Development">
+                            <description jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Strong programming skills in Java, as AEM is built on top of Java technologies like Apache Sling and Apache Felix."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Proficiency in frontend technologies such as HTML, CSS, JavaScript, and frameworks like React for AEM frontend development."/>
+                            </description>
+                        </item1>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            skillName="Version Control Systems">
+                            <description jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Experience with version control systems like Git for managing AEM project source code."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Understanding of AEM deployment strategies, including continuous integration and continuous deployment (CI/CD) pipelines."/>
+                            </description>
+                        </item2>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            skillName="Troubleshooting and Debugging">
+                            <description jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Ability to troubleshoot and debug issues within AEM environments, including performance optimization."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Strong analytical and problem-solving skills to identify and resolve complex technical challenges within AEM implementations."/>
+                            </description>
+                        </item3>
+                    </skills>
+                </summary>
+                <workexperience
+                    jcr:lastModified="{Date}2024-04-16T23:03:55.598+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="VamsiKrishna/components/workexperience">
+                    <companyDetails jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            companyName="Wipro"
+                            designation="Sr. Developer"
+                            endDate="2024-04-15"
+                            startDate="2022-02-01">
+                            <description jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Lead the design and implementation of complex AEM solutions, ensuring scalability and performance."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Mentor junior developers, conduct code reviews, and contribute to technical decision-making."/>
+                            </description>
+                        </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            companyName="Virtusa"
+                            designation="Associate"
+                            endDate="2022-01-18"
+                            startDate="2021-04-12">
+                            <description jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Provide expert-level guidance on AEM development, architecture, and best practices."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Implement integrations with third-party systems and services, leveraging AEM's extensibility."/>
+                            </description>
+                        </item1>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            companyName="Novitas Technologies"
+                            designation="Senior Developer"
+                            endDate="2021-04-09"
+                            startDate="2018-02-01">
+                            <description jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Assist in designing AEM solutions, including content structures, components, and templates."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    details="Provide input on technical feasibility and best practices to ensure effective AEM implementations."/>
+                            </description>
+                        </item2>
+                    </companyDetails>
+                </workexperience>
+            </resources>
+        </root>
+    </jcr:content>
+</jcr:root>

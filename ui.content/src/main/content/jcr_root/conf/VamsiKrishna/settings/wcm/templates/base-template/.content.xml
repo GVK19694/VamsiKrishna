@@ -2,9 +2,10 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:templateType="/conf/VamsiKrishna/settings/wcm/template-types/xf"
-        jcr:description="My Site Experience Fragment Template"
+        cq:lastModified="{Date}2024-04-16T22:55:15.209+05:30"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/VamsiKrishna/settings/wcm/template-types/page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Web Variation"
+        jcr:title="Base Template"
         status="enabled"/>
 </jcr:root>
