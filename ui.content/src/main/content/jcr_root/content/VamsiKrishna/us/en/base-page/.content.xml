@@ -6,7 +6,7 @@
         cq:lastModifiedBy="admin"
         cq:template="/conf/VamsiKrishna/settings/wcm/templates/base-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Bae Page"
+        jcr:title="Base Page"
         sling:resourceType="VamsiKrishna/components/page">
         <root
             jcr:lastModified="{Date}2024-04-16T22:54:55.251+05:30"
