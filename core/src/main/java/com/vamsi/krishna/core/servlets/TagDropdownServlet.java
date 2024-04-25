@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Component(service = Servlet.class, property = {Constants.SERVICE_DESCRIPTION + "= Tags value in dynamic Dropdown",
-        "sling.servlet.paths=" + "/bin/colorTagLists", "sling.servlet.methods=" + HttpConstants.METHOD_GET
+        "sling.servlet.paths=" + "/bin/VamsiKrishna/tagLists", "sling.servlet.methods=" + HttpConstants.METHOD_GET
 })
 public class TagDropdownServlet extends SlingSafeMethodsServlet {
     private static final Logger LOGGER = LoggerFactory.getLogger(TagDropdownServlet.class);

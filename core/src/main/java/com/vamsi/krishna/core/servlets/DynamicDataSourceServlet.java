@@ -42,7 +42,7 @@ import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVL
         service = Servlet.class,
         property = {
                 Constants.SERVICE_ID + "=" + "Dynamic DataSource Servlet",
-                SLING_SERVLET_RESOURCE_TYPES + "=" + "/bin/dropdownValues"
+                SLING_SERVLET_RESOURCE_TYPES + "=" + "/bin/VamsiKrishna/dropdownValues"
         }
 )
 public class DynamicDataSourceServlet extends SlingSafeMethodsServlet {

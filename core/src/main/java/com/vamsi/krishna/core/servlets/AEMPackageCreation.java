@@ -25,10 +25,10 @@ import javax.servlet.Servlet;
 import java.util.ArrayList;
 import java.util.List;
 
-/*http://localhost:4502/bin/packageCreation?packageName=<%Give the package name%>&groupName=<%Give the group name%>*/
+/*http://localhost:4502/bin/VamsiKrishna/packageCreation?packageName=<%Give the package name%>&groupName=<%Give the group name%>*/
 
 @Component(service = Servlet.class, property = {Constants.SERVICE_DESCRIPTION + "= Package Creation",
-        "sling.servlet.paths=" + "/bin/packageCreation", "sling.servlet.methods=" + HttpConstants.METHOD_GET
+        "sling.servlet.paths=" + "/bin/VamsiKrishna/packageCreation", "sling.servlet.methods=" + HttpConstants.METHOD_GET
 })
 public class AEMPackageCreation extends SlingSafeMethodsServlet {
     private static final Logger logger = LoggerFactory.getLogger(AEMPackageCreation.class);

@@ -22,7 +22,7 @@ import com.google.gson.JsonObject;
         property = {
                 Constants.SERVICE_DESCRIPTION + "=Component Properties Servlet",
                 ServletResolverConstants.SLING_SERVLET_METHODS + "=" + HttpConstants.METHOD_GET,
-                ServletResolverConstants.SLING_SERVLET_PATHS + "=/bin/componentsList"
+                ServletResolverConstants.SLING_SERVLET_PATHS + "=/bin/VamsiKrishna/componentsList"
         })
 public class ComponentPropertiesServlet extends SlingSafeMethodsServlet {
 

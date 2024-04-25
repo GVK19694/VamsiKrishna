@@ -24,10 +24,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/*http://localhost:4502/bin/packageReading?packagePath=/etc/packages/<%Give the group name%>/<%Give the package name%>.zip*/
+/*http://localhost:4502/bin/VamsiKrishna/packageReading?packagePath=/etc/packages/<%Give the group name%>/<%Give the package name%>.zip*/
 
 @Component(service = Servlet.class, property = {Constants.SERVICE_DESCRIPTION + "= Package Reading",
-        "sling.servlet.paths=" + "/bin/packageReading", "sling.servlet.methods=" + HttpConstants.METHOD_GET
+        "sling.servlet.paths=" + "/bin/VamsiKrishna/packageReading", "sling.servlet.methods=" + HttpConstants.METHOD_GET
 })
 public class AEMPackageReading extends SlingSafeMethodsServlet {
     private static final Logger logger = LoggerFactory.getLogger(AEMPackageReading.class);
