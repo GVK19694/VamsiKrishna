@@ -1,46 +1,70 @@
 <sly data-sly-use.pc="com.vamsi.krishna.core.models.ProfileCardModel"/>
-<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
-<sly data-sly-call="${template.placeholder @ isEmpty=!properties.socialMedia}"/>
-<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
-<sly data-sly-call="${clientlib.css @ categories='profile.card'}"/>
+<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+<style>
+    .social-menu ul{
+     display: flex;
+     padding: 0;
+     margin: 0;
+     background: #d8d8d8;
+     align-items: center;
+     justify-content: center;
+    }
+    
+    .social-menu ul li{
+        list-style: none;
+        margin: 0 15px;
+    }
+    
+    .social-menu ul li .fab{
+        font-size: 30px;
+        line-height: 60px;
+        transition: .3s;
+        color: #000;
+    }
+    
+    .social-menu ul li .fab:hover{
+        color: #fff;
+    }
+    
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        transition: .6s;
+        box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+    
+    .social-menu ul li a:hover{
+        transform: translate(0, -10%);
+    }
+    
+    .social-menu ul li:nth-child(1) a:hover{
+        background-color: #3A5795;
+    }
+    .social-menu ul li:nth-child(2) a:hover{
+        background-color: #333333;
+    }
+    .social-menu ul li:nth-child(3) a:hover{
+        background-color: #E4405F;
+    }
+    .social-menu ul li:nth-child(4) a:hover{
+        background-color: #637BAD;
+    }
+    .social-menu ul li:nth-child(5) a:hover{
+        background-color: #1DA1F2;
+    }
+</style>
 
-<div class="container">
-    <div class="card">
-        <img src="https://cdn0.iconfinder.com/data/icons/business-blue-series-set-1-1/128/a-21-512.png"
-             class="card__image"
-             alt="Person">
-        <p class="card__name">VAMSIKRISHNA G</p>
-        <sly data-sly-list.props="${resource.getChildren}">
-            <sly data-sly-test="${props.name == 'socialMedia'}"
-                 data-sly-list.sm="${props.getChildren}">
-                <div class="social-icons">
-                    <div class="li" data-sly-test="${sm.icons == 'Facebook'}">
-                        <a class="link" href="${pc.facebook}">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="li" data-sly-test="${sm.icons == 'Instagram'}">
-                        <a class="link" href="${pc.instagram}">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="li" data-sly-test="${sm.icons == 'LinkedIn'}">
-                        <a class="link" href="${pc.linkedin}">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="li" data-sly-test="${sm.icons == 'Twitter'}">
-                        <a class="link" href="${pc.twitter}">
-                            <i class="fa-brands fa-square-twitter"></i>
-                        </a>
-                    </div>
-                    <div class="li" data-sly-test="${sm.icons == 'Github'}">
-                        <a class="link" href="${pc.github}">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </sly>
-        </sly>
-    </div>
+<div class="social-menu">
+    <ul>
+        <li><a href="${pc.facebook}" target="blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="${pc.github}" target="blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="${pc.instagram}" target="blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="${pc.linkedin}" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="${pc.twitter}" target="blank"><i class="fab fa-twitter"></i></a></li>
+    </ul>
 </div>
